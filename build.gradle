@@ -1,1 +1,8 @@
 thing + thing = ratcro
++etherwarp
++spirit scepter
+if spirit scepter + etherwarp = location
+location = boom
+if boom; spirit scepter + etherwarp next location
+if cheese = 9000
+message woahhh big expensive @cyfurr @kimi @ rain
