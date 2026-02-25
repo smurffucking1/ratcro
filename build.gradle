@@ -1,0 +1,26 @@
+plugins {
+    id 'fabric-loom' version '1.8-SNAPSHOT'
+    id 'maven-publish'
+}
+
+group = "your.package"
+version = "1.0.0"
+archivesBaseName = "skyblock-qol"
+
+repositories {
+    mavenCentral()
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://maven.isxander.dev/releases" } // YACL [web:6]
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.1"
+    mappings "net.fabricmc:yarn:1.21.1+build.1:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.16.7"
+
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.1" [web:7][web:10]
+
+    // YetAnotherConfigLib
+    modImplementation "dev.isxander.yacl:yet-another-config-lib-fabric:3.5.0+1.21" // check latest [web:3][web:6]
+}
